@@ -1,0 +1,1 @@
+/groupId/artifactId/version/artifactId-version.jar
