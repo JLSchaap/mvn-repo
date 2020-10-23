@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <junit-jupiter.version>5.6.0</junit-jupiter.version>        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit-jupiter.version>5.6.0</junit-jupiter.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <groupId>jlsinspiremetadata</groupId>
     <artifactId>metadata</artifactId>
@@ -28,13 +30,13 @@
                 <artifactId>pitest-maven</artifactId>
                 <version>1.4.9</version>
                 <dependencies>
-                  <dependency>
-                    <groupId>org.pitest</groupId>
-                    <artifactId>pitest-junit5-plugin</artifactId>
-                    <version>0.12</version>
-                  </dependency>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>0.12</version>
+                    </dependency>
                 </dependencies>
-              </plugin>
+            </plugin>
         </plugins>
     </build>
 
@@ -63,6 +65,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-jupiter.version}</version>
@@ -83,6 +90,7 @@
             <artifactId>opencsv</artifactId>
             <version>5.2</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/net.sf.flexjson/flexjson -->
         <dependency>
